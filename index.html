@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vite App</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    
+  </head>
+  <body>
+    <div id="app">
+      <input v-model="angka1">
+      <input v-model="angka2">
+      <br>
+      <button v-on:click="hasil=parseFloat(angka1)+parseFloat(angka2)">+</button>
+      <button v-on:click="hasil=parseFloat(angka1)-parseFloat(angka2)">-</button>
+      <button v-on:click="hasil=parseFloat(angka1)/parseFloat(angka2)">/</button>
+      <button v-on:click="hasil=parseFloat(angka1)*parseFloat(angka2)">*</button>
+      <br>
+      {{ hasil }}
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
